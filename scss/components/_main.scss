@@ -1,0 +1,75 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: $light-orange;
+}
+
+nav ul li {
+  float: center;
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  color: $text-color;
+  background: $light-blue;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background: $light-grey;
+}
+
+
+/* Styling the sub menu */
+.submenu {
+  position: relative;
+}
+
+.submenu ul {
+  position: absolute;
+  padding:0; 
+  margin:0;
+  display: none;
+}
+
+.submenu li{
+  display: block;
+  background: $light-blue;
+  color: white;
+  float: none;
+  right:0;
+  left:0;
+}
+
+/* Styling drop down links */
+.submenu li a {
+  background: transparent;
+  padding:10px;
+  display: block;
+}
+
+.submenu li a:hover {
+  background: $light-grey;
+}
+
+/* Showing Submenu on hover*/
+.submenu:hover ul {
+  display: block;
+}
